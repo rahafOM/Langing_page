@@ -1,0 +1,16 @@
+project name :
+langing page
+
+description:
+Using JavaScript in addition to HTML and CSS to build an e-school project.
+
+Table of Contents:-
+- project NAME
+- description
+- sections
+
+sections:
+1- section1 : <a href="#one" title="home"></a>
+2- section2 : <a href="#tow" title="page"></a>
+3- section3 : <a href="#three" title="log-in"></a>
+4- section4 : <a href="#four" title="contact"></a>

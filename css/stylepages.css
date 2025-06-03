@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    font-family: "Quicksand", sans-serif;
+}
+.titlePage {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;  
+}
+
+nav h1{
+    text-align: center;
+    color:aliceblue;
+    border: 2px aliceblue solid;
+    backdrop-filter: blur(10px);
+    border-radius:50px;
+    font-size: 30px;
+    width: 100%;
+ }
+ .page{
+   display: flex;
+   align-items:center ;
+   justify-content: center; 
+   width: 100%;
+ }
+ .lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px aliceblue solid;
+    border-radius: 40px;
+    flex-direction: column;
+    padding: 5px;
+    margin: 50px;
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+ }
+ .lang img{   
+    width: 310px;
+    border-radius: 30px;
+ }
+ .add{
+    font-size: 40px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: aliceblue;
+ }
+ .bxs-plus-circle::before {
+    content:"\e92f";
+ }
+ .bxs-plus-circle :hover{
+    cursor:pointer;
+ }
+ @media screen and(max-width:768px) {
+   nav h1, .page,.lang img,.add{
+       width: 100%;
+       font-size: 16px;
+   }
+   
+}
