@@ -54,7 +54,7 @@ nav h1{
  .bxs-plus-circle :hover{
     cursor:pointer;
  }
- @media screen and(max-width:768px) {
+ @media screen and (max-width:768px) {
    nav h1, .page,.lang img,.add{
        width: 100%;
        font-size: 16px;

@@ -58,7 +58,7 @@ footer{
     width:550px ;
     height:300px;
 }
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
     #four h1,footer,.contact a,.comment,.comment label,.comment textarea{
      font-size: 14px;
        width: 100%;

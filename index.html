@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Code School</title>
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,34 +16,34 @@
             <h1 class="titleHome" >
               CODE SCHOOL</h1>
   
-              <nav id="navbar" >
+              <nav id="navbar" aria-label="Main navigation">
             
             </nav>
     </header>
-    <button class="up" title="up"><i class='bx bx-up-arrow-alt'></i></button>
+    <button class="up" type="button" title="Back to top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></button>
     <div class="sections">
     <section id="one" title="home">
-        <nav class="content" >
+        <div class="content"><p>
             "Programming is not just a technical skill; it is an art of transforming ideas into tangible reality. It is a creative process that allows you to build new worlds and achieve innovations that were once just dreams. With every challenge you face in programming, you get an opportunity to learn and grow. Mistakes and obstacles may seem discouraging at first, but they are actually your first teacher on the path to mastery" 
             <br>
             "In every line of code you write, you gain more wisdom and patience. Programming gives you the power to turn ideas into solutions and make the world a better place through technology. There are no limits to what you can achieve with programming; just unleash your imagination and persist in learning, for the digital world is waiting for your creativity"
            </p>
            <h4><b>Hi</b> i'm Rahaf , front-end developer and this is my school! </h4>
 
-        </nav>
-        <img class="person" src="image/person.webp" title="person">
+        </div>
+        <img class="person" src="image/person.webp" alt="Code School instructor">
 
     </section>
     
     <section id="two" title="course">
         <nav class="titlePage">
             <h1>
-                OUR CORSES 
+                OUR COURSES
             </h1>
           <nav class="page">
             <div class="lang">
-              <a class="add" href="#"><i class='bx bxs-plus-circle' title="add"></i></a>
-                <img src="image/c++.png" title="c++">
+              <a class="add" href="#three" aria-label="View demo login"><i class='bx bxs-plus-circle' aria-hidden="true"></i></a>
+                <img src="image/c++.png" alt="C++ course">
                 <p>
                     C++ is a high-performance programming language widely used for system/software development and game programming. It supports both procedural and object-oriented paradigms, offering flexibility in designing large-scale applications. C++ provides powerful features like classes, inheritance, polymorphism, and templates for generic programming. Its Standard Template Library (STL) simplifies common data structures and algorithms. Due to its efficiency and control over system resources.
                 </p>
@@ -52,8 +52,8 @@
                 <h5>Course price: $14</h5>
             </div>
             <div class="lang">
-                <a class="add" href="#"><i class='bx bxs-plus-circle' title="add"></i></a>
-                <img src="image/java.png" title="java">
+                <a class="add" href="#three" aria-label="View demo login"><i class='bx bxs-plus-circle' aria-hidden="true"></i></a>
+                <img src="image/java.png" alt="Java course">
                 <p>
                     Java is a versatile and platform-independent programming language widely used in web and enterprise applications. Its "write once, run anywhere" capability allows Java applications to run on any device with a Java Virtual Machine (JVM). Java's strong memory management, garbage collection, and robust security features make it a reliable choice for large-scale applications. With a vast ecosystem and extensive libraries, Java continues to be a popular language for developers worldwide.
                 </p>
@@ -62,8 +62,8 @@
                 <h5>Course price: $25</h5>
             </div>
             <div class="lang">
-                <a class="add" href="#"><i class='bx bxs-plus-circle' title="add"></i></a>
-                <img src="image/python.png" title="paython">
+                <a class="add" href="#three" aria-label="View demo login"><i class='bx bxs-plus-circle' aria-hidden="true"></i></a>
+                <img src="image/python.png" alt="Python course">
                 <p>
                     Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python's extensive standard library and numerous third-party modules make it ideal for a wide range of applications, from web development to data science and artificial intelligence. Its clear syntax and dynamic typing make Python an excellent choice for beginners and experienced developers alike.
                 </p>
@@ -80,15 +80,14 @@
        
             <h1>Log in</h1>
         
-            <form>
-          <label for="user">USER NAME</title><br>
-          <input placeholder="Rahaf Melhem" type="text" title="user name" id="user" name="name" class="input"><br>
-          <label for="password">PASSWORD</title><br>
-          <input placeholder="rahaf-99" type="password" title="password" id="password" name="password" class="input"><br>
-          <a class="fogret" href="https://mail.google.com/mail/u/0/" target="_blank">Forget Password?</a>
-          <a class="sing-up" href="https://support.google.com/accounts/answer/27441?hl=en" target="_blank">Don't have an account?</a><br>
-          <input type="submit" value="submit" class="submit"><br>
-          </form>
+            <p id="loginNote">Demo form only. Account login is not connected.</p><form id="loginForm" aria-describedby="loginNote">
+          <label for="user">USER NAME</label><br>
+          <input placeholder="Enter a demo username" required autocomplete="off" type="text" title="user name" id="user" name="name" class="input"><br>
+          <label for="password">PASSWORD</label><br>
+          <input placeholder="Use a demo password" required autocomplete="off" type="password" title="password" id="password" name="password" class="input"><br>
+          <p>Do not enter a real password in this demo.</p>
+          <input type="submit" value="Try demo" class="submit"><br>
+          <p id="loginStatus" role="status" aria-live="polite"></p></form>
    
     </section>
 
@@ -96,28 +95,28 @@
      <h1>CONTACT US</h1>
      <footer>
         <nav class="contact">
-        <a href="https://www.facebook.com/" title="facebook" target="_blank">
+        <a href="https://www.facebook.com/" title="facebook" target="_blank" rel="noopener noreferrer">
             <i class='bx bxl-facebook-circle'></i>
         </a>
-        <a href="https://web.whatsapp.com/" title="whatsapp" target="_blank">
+        <a href="https://web.whatsapp.com/" title="whatsapp" target="_blank" rel="noopener noreferrer">
             <i class='bx bxl-whatsapp' ></i>
         </a>
-        <a href="https://www.linkedin.com/feed/" title="linked-in" target="_blank">
+        <a href="https://www.linkedin.com/feed/" title="linked-in" target="_blank" rel="noopener noreferrer">
             <i class='bx bxl-linkedin-square'></i>    
         </a>
-        <a href="https://github.com/rahafOM" title="github" target="_blank">
+        <a href="https://github.com/rahafOM" title="github" target="_blank" rel="noopener noreferrer">
             <i class='bx bxl-github'></i>
         </a>
     </nav>
         <nav class="comment">
         <label for="comment">What do you think about this ?</label><br>
 
-        <textarea type="text" id="comment" placeholder="leave a comment "></textarea>
+        <p id="commentNote">This is a draft area; comments are not sent.</p><textarea aria-describedby="commentNote" id="comment" placeholder="leave a comment "></textarea>
     </nav>
      </footer>
     </section>
 </div>
+    <script src="js/main.js" defer></script>
     </body>
-    <!--js file-->
-    <script src="js/main.js"></script>
+
 </html>
